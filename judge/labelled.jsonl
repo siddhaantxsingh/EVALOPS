@@ -1,0 +1,50 @@
+{"question": "What is the capital of France?", "reference": "Paris", "candidate": "Paris", "label": 1}
+{"question": "What is the capital of France?", "reference": "Paris", "candidate": "The capital of France is Paris.", "label": 1}
+{"question": "What is the capital of France?", "reference": "Paris", "candidate": "Lyon", "label": 0}
+{"question": "What is the capital of Japan?", "reference": "Tokyo", "candidate": "Tokyo is the capital.", "label": 1}
+{"question": "What is the capital of Japan?", "reference": "Tokyo", "candidate": "Kyoto", "label": 0}
+{"question": "What is the capital of Australia?", "reference": "Canberra", "candidate": "Sydney", "label": 0}
+{"question": "What is the capital of Australia?", "reference": "Canberra", "candidate": "Canberra", "label": 1}
+{"question": "What is the capital of Canada?", "reference": "Ottawa", "candidate": "Toronto", "label": 0}
+{"question": "What is the capital of Italy?", "reference": "Rome", "candidate": "It is Rome.", "label": 1}
+{"question": "What is the capital of Germany?", "reference": "Berlin", "candidate": "Munich", "label": 0}
+{"question": "How many legs does a spider have?", "reference": "8", "candidate": "Eight", "label": 1}
+{"question": "How many legs does a spider have?", "reference": "8", "candidate": "Six", "label": 0}
+{"question": "How many days are in a week?", "reference": "7", "candidate": "seven days", "label": 1}
+{"question": "How many days are in a week?", "reference": "7", "candidate": "5", "label": 0}
+{"question": "How many continents are there?", "reference": "7", "candidate": "There are seven continents.", "label": 1}
+{"question": "How many continents are there?", "reference": "7", "candidate": "Nine", "label": 0}
+{"question": "What colour is the sky on a clear day?", "reference": "Blue", "candidate": "blue", "label": 1}
+{"question": "What colour is the sky on a clear day?", "reference": "Blue", "candidate": "Green", "label": 0}
+{"question": "What colour is grass?", "reference": "Green", "candidate": "It is green.", "label": 1}
+{"question": "What colour is grass?", "reference": "Green", "candidate": "Purple", "label": 0}
+{"question": "Who wrote Romeo and Juliet?", "reference": "William Shakespeare", "candidate": "Shakespeare", "label": 1}
+{"question": "Who wrote Romeo and Juliet?", "reference": "William Shakespeare", "candidate": "Charles Dickens", "label": 0}
+{"question": "Who painted the Mona Lisa?", "reference": "Leonardo da Vinci", "candidate": "Leonardo da Vinci painted it.", "label": 1}
+{"question": "Who painted the Mona Lisa?", "reference": "Leonardo da Vinci", "candidate": "Pablo Picasso", "label": 0}
+{"question": "What is the largest planet in the solar system?", "reference": "Jupiter", "candidate": "Jupiter", "label": 1}
+{"question": "What is the largest planet in the solar system?", "reference": "Jupiter", "candidate": "Mars", "label": 0}
+{"question": "What planet is known as the Red Planet?", "reference": "Mars", "candidate": "Mars, the red one.", "label": 1}
+{"question": "What planet is known as the Red Planet?", "reference": "Mars", "candidate": "Venus", "label": 0}
+{"question": "What is the boiling point of water at sea level in Celsius?", "reference": "100 degrees", "candidate": "100 \u00b0C", "label": 1}
+{"question": "What is the boiling point of water at sea level in Celsius?", "reference": "100 degrees", "candidate": "50 degrees", "label": 0}
+{"question": "What is the freezing point of water in Celsius?", "reference": "0 degrees", "candidate": "Zero degrees Celsius", "label": 1}
+{"question": "What is the freezing point of water in Celsius?", "reference": "0 degrees", "candidate": "32 degrees Celsius", "label": 0}
+{"question": "What gas do plants absorb from the air?", "reference": "Carbon dioxide", "candidate": "CO2", "label": 1}
+{"question": "What gas do plants absorb from the air?", "reference": "Carbon dioxide", "candidate": "Oxygen", "label": 0}
+{"question": "What is the chemical symbol for gold?", "reference": "Au", "candidate": "Au", "label": 1}
+{"question": "What is the chemical symbol for gold?", "reference": "Au", "candidate": "Ag", "label": 0}
+{"question": "What is the opposite of hot?", "reference": "Cold", "candidate": "cold", "label": 1}
+{"question": "What is the opposite of hot?", "reference": "Cold", "candidate": "Warm", "label": 0}
+{"question": "What animal says moo?", "reference": "A cow", "candidate": "Cows say moo.", "label": 1}
+{"question": "What animal says moo?", "reference": "A cow", "candidate": "A dog", "label": 0}
+{"question": "Which ocean is the largest?", "reference": "The Pacific Ocean", "candidate": "Pacific", "label": 1}
+{"question": "Which ocean is the largest?", "reference": "The Pacific Ocean", "candidate": "The Atlantic Ocean", "label": 0}
+{"question": "What language is mainly spoken in Brazil?", "reference": "Portuguese", "candidate": "Portuguese", "label": 1}
+{"question": "What language is mainly spoken in Brazil?", "reference": "Portuguese", "candidate": "Spanish", "label": 0}
+{"question": "How many hours are in a day?", "reference": "24", "candidate": "Twenty-four hours", "label": 1}
+{"question": "How many hours are in a day?", "reference": "24", "candidate": "12", "label": 0}
+{"question": "What is the square root of 81?", "reference": "9", "candidate": "nine", "label": 1}
+{"question": "What is the square root of 81?", "reference": "9", "candidate": "8", "label": 0}
+{"question": "Who was the first person to walk on the Moon?", "reference": "Neil Armstrong", "candidate": "Neil Armstrong", "label": 1}
+{"question": "Who was the first person to walk on the Moon?", "reference": "Neil Armstrong", "candidate": "Buzz Aldrin", "label": 0}

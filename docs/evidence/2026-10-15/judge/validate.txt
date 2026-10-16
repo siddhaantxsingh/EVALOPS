@@ -1,0 +1,142 @@
+labelled {
+ "items": 50,
+ "positives": 25,
+ "runs": [
+  {
+   "run": 1,
+   "items": 26,
+   "seconds": 52.89
+  },
+  {
+   "run": 2,
+   "items": 23,
+   "seconds": 21.71
+  },
+  {
+   "run": 3,
+   "items": 1,
+   "seconds": 1.05
+  }
+ ],
+ "repeat_runs": [
+  {
+   "run": 4,
+   "items": 26,
+   "seconds": 10.92
+  },
+  {
+   "run": 5,
+   "items": 23,
+   "seconds": 9.36
+  },
+  {
+   "run": 6,
+   "items": 1,
+   "seconds": 1.05
+  }
+ ],
+ "llm_judge": {
+  "accuracy": 0.5,
+  "kappa": 0.0,
+  "tp": 4,
+  "tn": 21,
+  "fp": 4,
+  "fn": 21,
+  "positive_rate": 0.16
+ },
+ "exact_match": {
+  "accuracy": 0.62,
+  "kappa": 0.24,
+  "tp": 6,
+  "tn": 25,
+  "fp": 0,
+  "fn": 19,
+  "positive_rate": 0.12
+ },
+ "contains": {
+  "accuracy": 0.72,
+  "kappa": 0.44,
+  "tp": 11,
+  "tn": 25,
+  "fp": 0,
+  "fn": 14,
+  "positive_rate": 0.22
+ },
+ "judge_vs_exact_match": {
+  "accuracy": 0.72,
+  "kappa": -0.1589,
+  "tp": 0,
+  "tn": 36,
+  "fp": 8,
+  "fn": 6,
+  "positive_rate": 0.16
+ },
+ "judge_parse_rate": 0.46,
+ "repeat_identical_verdicts": 50
+}
+arithmetic {
+ "items": 60,
+ "positives": 34,
+ "runs": [
+  {
+   "run": 7,
+   "items": 59,
+   "seconds": 110.97
+  },
+  {
+   "run": 8,
+   "items": 1,
+   "seconds": 1.54
+  }
+ ],
+ "repeat_runs": [
+  {
+   "run": 9,
+   "items": 59,
+   "seconds": 16.31
+  },
+  {
+   "run": 10,
+   "items": 1,
+   "seconds": 1.04
+  }
+ ],
+ "llm_judge": {
+  "accuracy": 0.5667,
+  "kappa": 0.0758,
+  "tp": 26,
+  "tn": 8,
+  "fp": 18,
+  "fn": 8,
+  "positive_rate": 0.7333
+ },
+ "exact_match": {
+  "accuracy": 1.0,
+  "kappa": 1.0,
+  "tp": 34,
+  "tn": 26,
+  "fp": 0,
+  "fn": 0,
+  "positive_rate": 0.5667
+ },
+ "contains": {
+  "accuracy": 1.0,
+  "kappa": 1.0,
+  "tp": 34,
+  "tn": 26,
+  "fp": 0,
+  "fn": 0,
+  "positive_rate": 0.5667
+ },
+ "judge_vs_exact_match": {
+  "accuracy": 0.5667,
+  "kappa": 0.0758,
+  "tp": 26,
+  "tn": 8,
+  "fp": 18,
+  "fn": 8,
+  "positive_rate": 0.7333
+ },
+ "judge_parse_rate": 0.7333,
+ "repeat_identical_verdicts": 60
+}

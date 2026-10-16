@@ -1,0 +1,2 @@
+FAIL first_line_exact: dropped 0.1367 (p = 0.0005) beyond the allowed 0.0200 (baseline 0.1600, candidate 0.0233, p = 0.0005)
+FAIL edit_similarity: dropped 0.0845 (p = 0.0005) beyond the allowed 0.0200 (baseline 0.4989, candidate 0.4144, p = 0.0005)

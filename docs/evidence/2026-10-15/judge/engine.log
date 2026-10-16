@@ -1,0 +1,3 @@
+[loaded /home/user/models/smollm2-135m-instruct-f16.gguf: 30 layers, d=576, vocab 49152, context 2048, 651.2 MB weights in memory, 25.43 s]
+[2m2026-10-15T18:01:29.873989Z[0m [32m INFO[0m [2mllm[0m[2m:[0m engine ready [3mcfg[0m[2m=[0mEngineConfig { block_size: 16, num_blocks: 1456, max_batch_tokens: 256, max_seqs: 64, prefix_caching: true, poison_freed: false } [3mkv_mb[0m[2m=[0m1073.47968 [3mweights_mb[0m[2m=[0m651.165696
+[2m2026-10-15T18:01:29.882300Z[0m [32m INFO[0m [2mllm[0m[2m:[0m listening on 127.0.0.1:18081

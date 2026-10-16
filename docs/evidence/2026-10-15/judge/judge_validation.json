@@ -1,0 +1,1031 @@
+{
+ "judge_url": "http://127.0.0.1:18081/v1/chat/completions",
+ "sets": {
+  "labelled": {
+   "items": 50,
+   "positives": 25,
+   "runs": [
+    {
+     "run": 1,
+     "items": 26,
+     "seconds": 52.89
+    },
+    {
+     "run": 2,
+     "items": 23,
+     "seconds": 21.71
+    },
+    {
+     "run": 3,
+     "items": 1,
+     "seconds": 1.05
+    }
+   ],
+   "repeat_runs": [
+    {
+     "run": 4,
+     "items": 26,
+     "seconds": 10.92
+    },
+    {
+     "run": 5,
+     "items": 23,
+     "seconds": 9.36
+    },
+    {
+     "run": 6,
+     "items": 1,
+     "seconds": 1.05
+    }
+   ],
+   "llm_judge": {
+    "accuracy": 0.5,
+    "kappa": 0.0,
+    "tp": 4,
+    "tn": 21,
+    "fp": 4,
+    "fn": 21,
+    "positive_rate": 0.16
+   },
+   "exact_match": {
+    "accuracy": 0.62,
+    "kappa": 0.24,
+    "tp": 6,
+    "tn": 25,
+    "fp": 0,
+    "fn": 19,
+    "positive_rate": 0.12
+   },
+   "contains": {
+    "accuracy": 0.72,
+    "kappa": 0.44,
+    "tp": 11,
+    "tn": 25,
+    "fp": 0,
+    "fn": 14,
+    "positive_rate": 0.22
+   },
+   "judge_vs_exact_match": {
+    "accuracy": 0.72,
+    "kappa": -0.1589,
+    "tp": 0,
+    "tn": 36,
+    "fp": 8,
+    "fn": 6,
+    "positive_rate": 0.16
+   },
+   "judge_parse_rate": 0.46,
+   "repeat_identical_verdicts": 50,
+   "examples": [
+    {
+     "q": "What is the capital of France?",
+     "ref": "Paris",
+     "cand": "Paris",
+     "label": 1,
+     "judge": 0.0,
+     "exact": 1.0
+    },
+    {
+     "q": "What is the capital of Japan?",
+     "ref": "Tokyo",
+     "cand": "Tokyo is the capital.",
+     "label": 1,
+     "judge": 0.0,
+     "exact": 0.0
+    },
+    {
+     "q": "What is the capital of Australia?",
+     "ref": "Canberra",
+     "cand": "Sydney",
+     "label": 0,
+     "judge": 0.0,
+     "exact": 0.0
+    },
+    {
+     "q": "What is the capital of Canada?",
+     "ref": "Ottawa",
+     "cand": "Toronto",
+     "label": 0,
+     "judge": 0.0,
+     "exact": 0.0
+    },
+    {
+     "q": "What is the capital of Italy?",
+     "ref": "Rome",
+     "cand": "It is Rome.",
+     "label": 1,
+     "judge": 0.0,
+     "exact": 0.0
+    },
+    {
+     "q": "What is the capital of Germany?",
+     "ref": "Berlin",
+     "cand": "Munich",
+     "label": 0,
+     "judge": 0.0,
+     "exact": 0.0
+    },
+    {
+     "q": "How many legs does a spider have?",
+     "ref": "8",
+     "cand": "Eight",
+     "label": 1,
+     "judge": 1.0,
+     "exact": 0.0
+    },
+    {
+     "q": "How many days are in a week?",
+     "ref": "7",
+     "cand": "seven days",
+     "label": 1,
+     "judge": 1.0,
+     "exact": 0.0
+    },
+    {
+     "q": "How many continents are there?",
+     "ref": "7",
+     "cand": "There are seven continents.",
+     "label": 1,
+     "judge": 0.0,
+     "exact": 0.0
+    },
+    {
+     "q": "What colour is the sky on a clear day?",
+     "ref": "Blue",
+     "cand": "blue",
+     "label": 1,
+     "judge": 0.0,
+     "exact": 0.0
+    },
+    {
+     "q": "What colour is grass?",
+     "ref": "Green",
+     "cand": "It is green.",
+     "label": 1,
+     "judge": 1.0,
+     "exact": 0.0
+    },
+    {
+     "q": "Who wrote Romeo and Juliet?",
+     "ref": "William Shakespeare",
+     "cand": "Shakespeare",
+     "label": 1,
+     "judge": 0.0,
+     "exact": 0.0
+    },
+    {
+     "q": "Who painted the Mona Lisa?",
+     "ref": "Leonardo da Vinci",
+     "cand": "Leonardo da Vinci painted it.",
+     "label": 1,
+     "judge": 0.0,
+     "exact": 0.0
+    },
+    {
+     "q": "What is the largest planet in the solar system?",
+     "ref": "Jupiter",
+     "cand": "Jupiter",
+     "label": 1,
+     "judge": 0.0,
+     "exact": 1.0
+    },
+    {
+     "q": "What planet is known as the Red Planet?",
+     "ref": "Mars",
+     "cand": "Mars, the red one.",
+     "label": 1,
+     "judge": 0.0,
+     "exact": 0.0
+    },
+    {
+     "q": "What is the boiling point of water at sea level in Celsius?",
+     "ref": "100 degrees",
+     "cand": "100 \u00b0C",
+     "label": 1,
+     "judge": 0.0,
+     "exact": 0.0
+    },
+    {
+     "q": "What is the freezing point of water in Celsius?",
+     "ref": "0 degrees",
+     "cand": "Zero degrees Celsius",
+     "label": 1,
+     "judge": 0.0,
+     "exact": 0.0
+    },
+    {
+     "q": "What gas do plants absorb from the air?",
+     "ref": "Carbon dioxide",
+     "cand": "CO2",
+     "label": 1,
+     "judge": 0.0,
+     "exact": 0.0
+    },
+    {
+     "q": "What is the chemical symbol for gold?",
+     "ref": "Au",
+     "cand": "Au",
+     "label": 1,
+     "judge": 0.0,
+     "exact": 1.0
+    },
+    {
+     "q": "What is the opposite of hot?",
+     "ref": "Cold",
+     "cand": "cold",
+     "label": 1,
+     "judge": 0.0,
+     "exact": 0.0
+    },
+    {
+     "q": "What animal says moo?",
+     "ref": "A cow",
+     "cand": "Cows say moo.",
+     "label": 1,
+     "judge": 0.0,
+     "exact": 0.0
+    },
+    {
+     "q": "Which ocean is the largest?",
+     "ref": "The Pacific Ocean",
+     "cand": "Pacific",
+     "label": 1,
+     "judge": 0.0,
+     "exact": 0.0
+    },
+    {
+     "q": "What language is mainly spoken in Brazil?",
+     "ref": "Portuguese",
+     "cand": "Portuguese",
+     "label": 1,
+     "judge": 0.0,
+     "exact": 1.0
+    },
+    {
+     "q": "How many hours are in a day?",
+     "ref": "24",
+     "cand": "Twenty-four hours",
+     "label": 1,
+     "judge": 1.0,
+     "exact": 0.0
+    },
+    {
+     "q": "What is the square root of 81?",
+     "ref": "9",
+     "cand": "nine",
+     "label": 1,
+     "judge": 0.0,
+     "exact": 0.0
+    },
+    {
+     "q": "Who was the first person to walk on the Moon?",
+     "ref": "Neil Armstrong",
+     "cand": "Neil Armstrong",
+     "label": 1,
+     "judge": 0.0,
+     "exact": 1.0
+    },
+    {
+     "q": "What is the capital of France?",
+     "ref": "Paris",
+     "cand": "The capital of France is Paris.",
+     "label": 1,
+     "judge": 0.0,
+     "exact": 0.0
+    },
+    {
+     "q": "What is the capital of Japan?",
+     "ref": "Tokyo",
+     "cand": "Kyoto",
+     "label": 0,
+     "judge": 0.0,
+     "exact": 0.0
+    },
+    {
+     "q": "What is the capital of Australia?",
+     "ref": "Canberra",
+     "cand": "Canberra",
+     "label": 1,
+     "judge": 0.0,
+     "exact": 1.0
+    },
+    {
+     "q": "How many legs does a spider have?",
+     "ref": "8",
+     "cand": "Six",
+     "label": 0,
+     "judge": 1.0,
+     "exact": 0.0
+    },
+    {
+     "q": "How many days are in a week?",
+     "ref": "7",
+     "cand": "5",
+     "label": 0,
+     "judge": 1.0,
+     "exact": 0.0
+    },
+    {
+     "q": "How many continents are there?",
+     "ref": "7",
+     "cand": "Nine",
+     "label": 0,
+     "judge": 1.0,
+     "exact": 0.0
+    },
+    {
+     "q": "What colour is the sky on a clear day?",
+     "ref": "Blue",
+     "cand": "Green",
+     "label": 0,
+     "judge": 0.0,
+     "exact": 0.0
+    },
+    {
+     "q": "What colour is grass?",
+     "ref": "Green",
+     "cand": "Purple",
+     "label": 0,
+     "judge": 0.0,
+     "exact": 0.0
+    },
+    {
+     "q": "Who wrote Romeo and Juliet?",
+     "ref": "William Shakespeare",
+     "cand": "Charles Dickens",
+     "label": 0,
+     "judge": 0.0,
+     "exact": 0.0
+    },
+    {
+     "q": "Who painted the Mona Lisa?",
+     "ref": "Leonardo da Vinci",
+     "cand": "Pablo Picasso",
+     "label": 0,
+     "judge": 0.0,
+     "exact": 0.0
+    },
+    {
+     "q": "What is the largest planet in the solar system?",
+     "ref": "Jupiter",
+     "cand": "Mars",
+     "label": 0,
+     "judge": 0.0,
+     "exact": 0.0
+    },
+    {
+     "q": "What planet is known as the Red Planet?",
+     "ref": "Mars",
+     "cand": "Venus",
+     "label": 0,
+     "judge": 0.0,
+     "exact": 0.0
+    },
+    {
+     "q": "What is the boiling point of water at sea level in Celsius?",
+     "ref": "100 degrees",
+     "cand": "50 degrees",
+     "label": 0,
+     "judge": 0.0,
+     "exact": 0.0
+    },
+    {
+     "q": "What is the freezing point of water in Celsius?",
+     "ref": "0 degrees",
+     "cand": "32 degrees Celsius",
+     "label": 0,
+     "judge": 0.0,
+     "exact": 0.0
+    },
+    {
+     "q": "What gas do plants absorb from the air?",
+     "ref": "Carbon dioxide",
+     "cand": "Oxygen",
+     "label": 0,
+     "judge": 0.0,
+     "exact": 0.0
+    },
+    {
+     "q": "What is the chemical symbol for gold?",
+     "ref": "Au",
+     "cand": "Ag",
+     "label": 0,
+     "judge": 0.0,
+     "exact": 0.0
+    },
+    {
+     "q": "What is the opposite of hot?",
+     "ref": "Cold",
+     "cand": "Warm",
+     "label": 0,
+     "judge": 0.0,
+     "exact": 0.0
+    },
+    {
+     "q": "What animal says moo?",
+     "ref": "A cow",
+     "cand": "A dog",
+     "label": 0,
+     "judge": 0.0,
+     "exact": 0.0
+    },
+    {
+     "q": "Which ocean is the largest?",
+     "ref": "The Pacific Ocean",
+     "cand": "The Atlantic Ocean",
+     "label": 0,
+     "judge": 0.0,
+     "exact": 0.0
+    },
+    {
+     "q": "What language is mainly spoken in Brazil?",
+     "ref": "Portuguese",
+     "cand": "Spanish",
+     "label": 0,
+     "judge": 0.0,
+     "exact": 0.0
+    },
+    {
+     "q": "How many hours are in a day?",
+     "ref": "24",
+     "cand": "12",
+     "label": 0,
+     "judge": 1.0,
+     "exact": 0.0
+    },
+    {
+     "q": "What is the square root of 81?",
+     "ref": "9",
+     "cand": "8",
+     "label": 0,
+     "judge": 0.0,
+     "exact": 0.0
+    },
+    {
+     "q": "Who was the first person to walk on the Moon?",
+     "ref": "Neil Armstrong",
+     "cand": "Buzz Aldrin",
+     "label": 0,
+     "judge": 0.0,
+     "exact": 0.0
+    },
+    {
+     "q": "What is the capital of France?",
+     "ref": "Paris",
+     "cand": "Lyon",
+     "label": 0,
+     "judge": 0.0,
+     "exact": 0.0
+    }
+   ]
+  },
+  "arithmetic": {
+   "items": 60,
+   "positives": 34,
+   "runs": [
+    {
+     "run": 7,
+     "items": 59,
+     "seconds": 110.97
+    },
+    {
+     "run": 8,
+     "items": 1,
+     "seconds": 1.54
+    }
+   ],
+   "repeat_runs": [
+    {
+     "run": 9,
+     "items": 59,
+     "seconds": 16.31
+    },
+    {
+     "run": 10,
+     "items": 1,
+     "seconds": 1.04
+    }
+   ],
+   "llm_judge": {
+    "accuracy": 0.5667,
+    "kappa": 0.0758,
+    "tp": 26,
+    "tn": 8,
+    "fp": 18,
+    "fn": 8,
+    "positive_rate": 0.7333
+   },
+   "exact_match": {
+    "accuracy": 1.0,
+    "kappa": 1.0,
+    "tp": 34,
+    "tn": 26,
+    "fp": 0,
+    "fn": 0,
+    "positive_rate": 0.5667
+   },
+   "contains": {
+    "accuracy": 1.0,
+    "kappa": 1.0,
+    "tp": 34,
+    "tn": 26,
+    "fp": 0,
+    "fn": 0,
+    "positive_rate": 0.5667
+   },
+   "judge_vs_exact_match": {
+    "accuracy": 0.5667,
+    "kappa": 0.0758,
+    "tp": 26,
+    "tn": 8,
+    "fp": 18,
+    "fn": 8,
+    "positive_rate": 0.7333
+   },
+   "judge_parse_rate": 0.7333,
+   "repeat_identical_verdicts": 60,
+   "examples": [
+    {
+     "q": "What is 22 + 11?",
+     "ref": "33",
+     "cand": "33",
+     "label": 1,
+     "judge": 1.0,
+     "exact": 1.0
+    },
+    {
+     "q": "What is 5 + 6?",
+     "ref": "11",
+     "cand": "8",
+     "label": 0,
+     "judge": 0.0,
+     "exact": 0.0
+    },
+    {
+     "q": "What is 25 + 39?",
+     "ref": "64",
+     "cand": "64",
+     "label": 1,
+     "judge": 1.0,
+     "exact": 1.0
+    },
+    {
+     "q": "What is 34 + 15?",
+     "ref": "49",
+     "cand": "49",
+     "label": 1,
+     "judge": 1.0,
+     "exact": 1.0
+    },
+    {
+     "q": "What is 29 + 28?",
+     "ref": "57",
+     "cand": "57",
+     "label": 1,
+     "judge": 1.0,
+     "exact": 1.0
+    },
+    {
+     "q": "What is 7 + 37?",
+     "ref": "44",
+     "cand": "44",
+     "label": 1,
+     "judge": 0.0,
+     "exact": 1.0
+    },
+    {
+     "q": "What is 54 + 38?",
+     "ref": "92",
+     "cand": "92",
+     "label": 1,
+     "judge": 1.0,
+     "exact": 1.0
+    },
+    {
+     "q": "What is 16 + 42?",
+     "ref": "58",
+     "cand": "55",
+     "label": 0,
+     "judge": 1.0,
+     "exact": 0.0
+    },
+    {
+     "q": "What is 38 + 39?",
+     "ref": "77",
+     "cand": "77",
+     "label": 1,
+     "judge": 1.0,
+     "exact": 1.0
+    },
+    {
+     "q": "What is 16 + 4?",
+     "ref": "20",
+     "cand": "18",
+     "label": 0,
+     "judge": 0.0,
+     "exact": 0.0
+    },
+    {
+     "q": "What is 20 + 28?",
+     "ref": "48",
+     "cand": "48",
+     "label": 1,
+     "judge": 1.0,
+     "exact": 1.0
+    },
+    {
+     "q": "What is 9 + 38?",
+     "ref": "47",
+     "cand": "47",
+     "label": 1,
+     "judge": 0.0,
+     "exact": 1.0
+    },
+    {
+     "q": "What is 54 + 45?",
+     "ref": "99",
+     "cand": "99",
+     "label": 1,
+     "judge": 1.0,
+     "exact": 1.0
+    },
+    {
+     "q": "What is 39 + 38?",
+     "ref": "77",
+     "cand": "76",
+     "label": 0,
+     "judge": 1.0,
+     "exact": 0.0
+    },
+    {
+     "q": "What is 8 + 37?",
+     "ref": "45",
+     "cand": "47",
+     "label": 0,
+     "judge": 0.0,
+     "exact": 0.0
+    },
+    {
+     "q": "What is 5 + 41?",
+     "ref": "46",
+     "cand": "46",
+     "label": 1,
+     "judge": 1.0,
+     "exact": 1.0
+    },
+    {
+     "q": "What is 45 + 36?",
+     "ref": "81",
+     "cand": "81",
+     "label": 1,
+     "judge": 0.0,
+     "exact": 1.0
+    },
+    {
+     "q": "What is 22 + 31?",
+     "ref": "53",
+     "cand": "54",
+     "label": 0,
+     "judge": 1.0,
+     "exact": 0.0
+    },
+    {
+     "q": "What is 25 + 21?",
+     "ref": "46",
+     "cand": "46",
+     "label": 1,
+     "judge": 1.0,
+     "exact": 1.0
+    },
+    {
+     "q": "What is 13 + 46?",
+     "ref": "59",
+     "cand": "56",
+     "label": 0,
+     "judge": 1.0,
+     "exact": 0.0
+    },
+    {
+     "q": "What is 38 + 21?",
+     "ref": "59",
+     "cand": "58",
+     "label": 0,
+     "judge": 1.0,
+     "exact": 0.0
+    },
+    {
+     "q": "What is 48 + 30?",
+     "ref": "78",
+     "cand": "78",
+     "label": 1,
+     "judge": 1.0,
+     "exact": 1.0
+    },
+    {
+     "q": "What is 6 + 9?",
+     "ref": "15",
+     "cand": "13",
+     "label": 0,
+     "judge": 1.0,
+     "exact": 0.0
+    },
+    {
+     "q": "What is 50 + 23?",
+     "ref": "73",
+     "cand": "73",
+     "label": 1,
+     "judge": 1.0,
+     "exact": 1.0
+    },
+    {
+     "q": "What is 33 + 28?",
+     "ref": "61",
+     "cand": "61",
+     "label": 1,
+     "judge": 1.0,
+     "exact": 1.0
+    },
+    {
+     "q": "What is 44 + 6?",
+     "ref": "50",
+     "cand": "52",
+     "label": 0,
+     "judge": 0.0,
+     "exact": 0.0
+    },
+    {
+     "q": "What is 52 + 58?",
+     "ref": "110",
+     "cand": "109",
+     "label": 0,
+     "judge": 1.0,
+     "exact": 0.0
+    },
+    {
+     "q": "What is 46 + 24?",
+     "ref": "70",
+     "cand": "72",
+     "label": 0,
+     "judge": 1.0,
+     "exact": 0.0
+    },
+    {
+     "q": "What is 53 + 31?",
+     "ref": "84",
+     "cand": "84",
+     "label": 1,
+     "judge": 1.0,
+     "exact": 1.0
+    },
+    {
+     "q": "What is 7 + 19?",
+     "ref": "26",
+     "cand": "26",
+     "label": 1,
+     "judge": 1.0,
+     "exact": 1.0
+    },
+    {
+     "q": "What is 46 + 21?",
+     "ref": "67",
+     "cand": "77",
+     "label": 0,
+     "judge": 1.0,
+     "exact": 0.0
+    },
+    {
+     "q": "What is 54 + 30?",
+     "ref": "84",
+     "cand": "84",
+     "label": 1,
+     "judge": 1.0,
+     "exact": 1.0
+    },
+    {
+     "q": "What is 26 + 58?",
+     "ref": "84",
+     "cand": "81",
+     "label": 0,
+     "judge": 1.0,
+     "exact": 0.0
+    },
+    {
+     "q": "What is 31 + 24?",
+     "ref": "55",
+     "cand": "55",
+     "label": 1,
+     "judge": 1.0,
+     "exact": 1.0
+    },
+    {
+     "q": "What is 9 + 33?",
+     "ref": "42",
+     "cand": "42",
+     "label": 1,
+     "judge": 0.0,
+     "exact": 1.0
+    },
+    {
+     "q": "What is 51 + 20?",
+     "ref": "71",
+     "cand": "71",
+     "label": 1,
+     "judge": 1.0,
+     "exact": 1.0
+    },
+    {
+     "q": "What is 17 + 27?",
+     "ref": "44",
+     "cand": "44",
+     "label": 1,
+     "judge": 1.0,
+     "exact": 1.0
+    },
+    {
+     "q": "What is 57 + 33?",
+     "ref": "90",
+     "cand": "90",
+     "label": 1,
+     "judge": 1.0,
+     "exact": 1.0
+    },
+    {
+     "q": "What is 30 + 27?",
+     "ref": "57",
+     "cand": "55",
+     "label": 0,
+     "judge": 1.0,
+     "exact": 0.0
+    },
+    {
+     "q": "What is 54 + 29?",
+     "ref": "83",
+     "cand": "82",
+     "label": 0,
+     "judge": 1.0,
+     "exact": 0.0
+    },
+    {
+     "q": "What is 47 + 28?",
+     "ref": "75",
+     "cand": "85",
+     "label": 0,
+     "judge": 0.0,
+     "exact": 0.0
+    },
+    {
+     "q": "What is 58 + 26?",
+     "ref": "84",
+     "cand": "82",
+     "label": 0,
+     "judge": 1.0,
+     "exact": 0.0
+    },
+    {
+     "q": "What is 7 + 13?",
+     "ref": "20",
+     "cand": "20",
+     "label": 1,
+     "judge": 0.0,
+     "exact": 1.0
+    },
+    {
+     "q": "What is 44 + 16?",
+     "ref": "60",
+     "cand": "60",
+     "label": 1,
+     "judge": 1.0,
+     "exact": 1.0
+    },
+    {
+     "q": "What is 55 + 39?",
+     "ref": "94",
+     "cand": "94",
+     "label": 1,
+     "judge": 1.0,
+     "exact": 1.0
+    },
+    {
+     "q": "What is 20 + 2?",
+     "ref": "22",
+     "cand": "22",
+     "label": 1,
+     "judge": 0.0,
+     "exact": 1.0
+    },
+    {
+     "q": "What is 36 + 25?",
+     "ref": "61",
+     "cand": "60",
+     "label": 0,
+     "judge": 1.0,
+     "exact": 0.0
+    },
+    {
+     "q": "What is 10 + 46?",
+     "ref": "56",
+     "cand": "58",
+     "label": 0,
+     "judge": 1.0,
+     "exact": 0.0
+    },
+    {
+     "q": "What is 43 + 45?",
+     "ref": "88",
+     "cand": "89",
+     "label": 0,
+     "judge": 0.0,
+     "exact": 0.0
+    },
+    {
+     "q": "What is 59 + 57?",
+     "ref": "116",
+     "cand": "126",
+     "label": 0,
+     "judge": 1.0,
+     "exact": 0.0
+    },
+    {
+     "q": "What is 53 + 37?",
+     "ref": "90",
+     "cand": "90",
+     "label": 1,
+     "judge": 1.0,
+     "exact": 1.0
+    },
+    {
+     "q": "What is 27 + 27?",
+     "ref": "54",
+     "cand": "54",
+     "label": 1,
+     "judge": 1.0,
+     "exact": 1.0
+    },
+    {
+     "q": "What is 42 + 27?",
+     "ref": "69",
+     "cand": "69",
+     "label": 1,
+     "judge": 1.0,
+     "exact": 1.0
+    },
+    {
+     "q": "What is 6 + 15?",
+     "ref": "21",
+     "cand": "21",
+     "label": 1,
+     "judge": 0.0,
+     "exact": 1.0
+    },
+    {
+     "q": "What is 9 + 23?",
+     "ref": "32",
+     "cand": "29",
+     "label": 0,
+     "judge": 0.0,
+     "exact": 0.0
+    },
+    {
+     "q": "What is 2 + 38?",
+     "ref": "40",
+     "cand": "40",
+     "label": 1,
+     "judge": 1.0,
+     "exact": 1.0
+    },
+    {
+     "q": "What is 8 + 25?",
+     "ref": "33",
+     "cand": "30",
+     "label": 0,
+     "judge": 0.0,
+     "exact": 0.0
+    },
+    {
+     "q": "What is 57 + 15?",
+     "ref": "72",
+     "cand": "70",
+     "label": 0,
+     "judge": 1.0,
+     "exact": 0.0
+    },
+    {
+     "q": "What is 42 + 18?",
+     "ref": "60",
+     "cand": "62",
+     "label": 0,
+     "judge": 1.0,
+     "exact": 0.0
+    },
+    {
+     "q": "What is 44 + 6?",
+     "ref": "50",
+     "cand": "50",
+     "label": 1,
+     "judge": 0.0,
+     "exact": 1.0
+    }
+   ]
+  }
+ }
+}
